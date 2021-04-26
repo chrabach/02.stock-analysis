@@ -51,8 +51,9 @@ Refactoring code can be advantageous when the gains it generates outweigh the co
 
 ### Applicability to this project
 
-![Program Run Times](resources/Program_Run_Times.png)
-[Exhibit 6: 2018 Run refactored](resources/Program_Run_Times.png?raw=true "Program Run Times")
+![Program Run Times](other_resources/Program_Run_Times.png)
+[Exhibit 6: 2018 Run refactored](other_resources/Program_Run_Times.png?raw=true "Program Run Times")
+
 
 Exhibit 6 shows the consistency of the run times: the refactored code is consistently faster.  The number of “trips” through the data is reduced by a factor of the number of tickers under analysis.  This doesn’t appear to translate linearly to a reduction in processing time, but there can be no doubt that efficiency gains are realized.  Now that the refactorization is done, there are no downsides, as all time invested is a sunk cost.  Since the code executes in 20% of the time, the refactored code is clearly superior.
 
