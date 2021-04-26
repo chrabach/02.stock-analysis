@@ -41,16 +41,20 @@ Exhibits 2 through 5 show the code run times of the two years under analysis bot
 
 The original code looped through each line of the given year’s data for each ticker under investigation.  The refactored code loops visits each data row only once, evaluating which ticker is assigned to a given data row as part of the cycle.  Since this analysis uses 12 stocks, the result is a 12x reduction in loop count.  Further analysis would be required to quantify the amount of the reduction, but it is true to say that the efficiency gains are compounded as the number of tickers analyzed increases.
 
-##Summary
+## Summary
 
 
 ### Advantages and Disadvantages of refactoring code
 
+Refactoring code can be advantageous when the gains it generates outweigh the costs of implementing.  Gains can come in the form of increased system efficiency, or reduced monetary costs.  More, the presentation of the “clean sheet” offers the opportunity to simplify the code, making it more readable and possibly easier to maintain.  On the other hand, costs of refactoring can include the time demands on those conducting the refactoring, and the increased risk of error.  Whenever a complex system is modified in any significant way, the risk of error increases dramatically.
+
+
+### Applicability to this project
 
 ![Program Run Times](resources/Program_Run_Times.png)
 [Exhibit 6: 2018 Run refactored](resources/Program_Run_Times.png?raw=true "Program Run Times")
 
-Exhibit 6 shows the consistency of the run times: the refactored code is consistently faster.  Refactoring code can be advantageous when it renders a process more efficient, as it has in this case.  The number of “trips” through the data is reduced by a factor of the number of tickers under analysis.  This doesn’t appear to translate linearly to a reduction in processing time, but there can be no doubt that efficiency gains are realized.  A second advantage of refactorization is that the “clean sheet” offers the opportunity to simplify the code, making it more readable and possibly easier to maintain.  
+Exhibit 6 shows the consistency of the run times: the refactored code is consistently faster.  The number of “trips” through the data is reduced by a factor of the number of tickers under analysis.  This doesn’t appear to translate linearly to a reduction in processing time, but there can be no doubt that efficiency gains are realized.  Now that the refactorization is done, there are no downsides, as all time invested is a sunk cost.  Since the code executes in 20% of the time, the refactored code is clearly superior.
 
 
 
